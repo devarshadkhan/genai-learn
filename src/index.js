@@ -188,7 +188,7 @@ console.log('Output tokens:', tokenTest.usage.completion_tokens);
 console.log('Total tokens:', tokenTest.usage.total_tokens);
 
 // Embedding test
-const embeddingResult = await embeddingModel.embedContent("cricket match today");
+const embeddingResult = await embeddingModel.embedContent("cricket match today ");
 const embeddingValues = embeddingResult.embedding.values;
 console.log('Embedding (first 5 numbers):', embeddingValues.slice(0, 5));
 console.log('Total numbers:', embeddingValues.length);
